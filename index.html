@@ -82,6 +82,12 @@
   margin: 0 auto;
 }
 
+#my-image2 {
+  margin: 10px 150px; /* 上下间距为 100 像素，左右间距为 150 像素 */
+  max-width: 50%; /* 图片宽度最大为容器宽度 */
+  height: auto; /* 根据宽度自适应高度，保持宽高比 */
+}
+
         #message p {
             color: #555;
             padding: 5px 0px;
@@ -103,86 +109,6 @@
             border-radius: 0.3em;
         }
 
-        #github {
-            position: absolute;
-            bottom: 0px;
-            font-size: 12px !important;
-            color: #aaa !important;
-        }
-
-        @media (max-width: 420px) {
-            .suggested-left > #control-buttons, .suggested-right > #control-buttons {
-                float: none;
-            }
-
-            .snackbar {
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                border-radius: 0;
-            }
-
-            #message p {
-
-                padding: 20px;
-            }
-        }
-
-        @media (max-height: 350px) {
-  
-
-            .icon-offline {
-                margin: 0 0 10px;
-            }
-
-            .interstitial-wrapper {
-                margin-top: 5%;
-            }
-
-            .nav-wrapper {
-                margin-top: 30px;
-            }
-        }
-
-        @media (min-width: 600px) and (max-width: 736px) and (orientation: landscape) {
-            .offline .interstitial-wrapper {
-                margin-left: 0;
-                margin-right: 0;
-            }
-        }
-
-        @media (min-width: 420px) and (max-width: 736px) and (min-height: 240px) and (max-height: 420px) and (orientation: landscape) {
-            .interstitial-wrapper {
-                margin-bottom: 100px;
-            }
-        }
-
-        @media (min-height: 240px) and (orientation: landscape) {
-            .offline .interstitial-wrapper {
-                margin-bottom: 90px;
-            }
-
-            .icon-offline {
-                margin-bottom: 20px;
-            }
-        }
-
-        @media (max-height: 320px) and (orientation: landscape) {
-            .icon-offline {
-                margin-bottom: 0;
-            }
-
-            .offline .runner-container {
-                top: 10px;
-            }
-        }
-
-        @media (max-width: 240px) {
-            .interstitial-wrapper {
-                overflow: inherit;
-                padding: 0 8px;
-            }
-        }
 
     </style>
 </head>
@@ -228,11 +154,12 @@
 </script>
 
 <div style="text-align: center;">
-    <img id="my-image" src="./family.jpg" alt="my">
+    <img id="my-image" src="./family.jpg" alt="my" style="margin-top: 100px;">
     <p></p>
   </div>
   <div style="text-align: center;">
-    <img id="my-image" src="./dino.jpg" alt="my">
+    <img id="my-image2" src="./dino.jpg" alt="my">
     <p></p>
   </div>
+
 </html>
